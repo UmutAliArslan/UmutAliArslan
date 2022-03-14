@@ -58,7 +58,9 @@
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
-
+#navbarDropdownMenuLink:hover {
+  color: #f4b70b;
+}
 @media screen and (max-width: 992px) {
   .ayrac {
     display: none;
@@ -86,7 +88,20 @@
     padding-top: 70px;
   }
 }
-
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+  .navbar .nav-item:hover .nav-link {
+    cursor: pointer;
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
+}
 .bosluk {
   margin-top: 100px;
 }
@@ -105,7 +120,7 @@
 }
 
 /* Hizmetlerimiz */
-.hizmetlerimiz {
+.urunlerimiz {
   background-color: #f4b70b;
 }
 
@@ -144,6 +159,17 @@
   cursor: pointer;
 }
 .calisma img {
+  height: 150px;
+}
+.zeytin {
+  padding: 5px;
+  border: 1px solid transparent;
+}
+.zeytin:hover {
+  border: 1px solid gray;
+  cursor: pointer;
+}
+.zeytin img {
   height: 150px;
 }
 
